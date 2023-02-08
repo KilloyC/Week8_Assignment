@@ -1,0 +1,96 @@
+html, body {
+    background-color: aqua;
+    margin: 0;
+}
+
+header{
+    background-image: url("https://images.immediate.co.uk/production/volatile/sites/4/2019/10/GettyImages-460712793-769fd3a.jpg?quality=90&crop=4px,37px,931px,401px&resize=940,400");
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    height: 155px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.menuText a {
+    /* The element floats to the left of its container */
+    float: left;
+    color: aqua;
+    text-align: center;
+    /* padding is used to generate space around an element's content, inside of any defined borders. */
+    padding: 10px 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    border-bottom: 1px solid rgba(255, 255, 255);
+    position: relative;
+    top: 80px;
+}
+
+.menuText a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#h2 {
+    font-size:300%; 
+    color:red;
+    text-align: center;
+    position: relative;
+    top: 130px;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+}
+
+#h4 {
+    font-size: large;
+    text-align: center;
+    position: relative;
+    top: 95px;
+}
+
+ol {
+    /* puts the order list into two columns. */
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    padding-left: 15rem;
+    position: relative;
+    top: 80px;
+}
+
+ol li {
+    position: relative;
+    
+}
+
+li {
+    color:red;
+}
+
+img {
+    /* vw is viewport width which is relative to 1% of the width of the viewport and vh viewport height which is relative to 1% of the height of the viewport. */
+    width: 25vw;
+    height: 50vh;
+}
+
+#h3 {
+    position: relative;
+    top: 55px;
+}
+
+.form {
+    position: relative;
+    top: 50px;
+    padding-bottom: 10px;
+}

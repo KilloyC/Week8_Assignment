@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    
+<header>
+    <div class="menuText"> <!--allows for navigation between pages-->
+       <a href="galaxy.html">Galaxy</a>
+       <a href="planets.html">Planets</a>
+       <a href="stars.html">Stars</a> 
+    </div>
+</header>
+
+
+    <h2 id="h2">🌎Planets In Our Galaxy🌍</h2>
+    <h4 id="h4">click on the picture to learn more about each planet!</h4>
+
+    <!--this creates an order list which will be numbered-->
+    <ol>
+        <li><b>Mercury</b></li>
+        <a href="https://solarsystem.nasa.gov/planets/mercury/overview/"><img src="https://scx2.b-cdn.net/gfx/news/hires/2015/whatsimporta.jpg" alt="Picture of Mercury."></a>
+        <!--this is an anchor for the image being uploaded, it provides a link from the picture to the https associated with it-->
+        
+        <li><b>Venus</b></li>
+        <a href="https://solarsystem.nasa.gov/planets/venus/overview/"><img src="https://images.theconversation.com/files/404401/original/file-20210604-13-128m0ja.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" alt="Picture of Venus."></a>
+        
+        <li><b>Earth</b></li>
+        <a href="https://solarsystem.nasa.gov/planets/earth/overview/"><img src="https://eoimages.gsfc.nasa.gov/images/imagerecords/0/565/BlueMarble.jpg" alt="Picture of Earth."></a>
+        
+        <li><b>Mars</b></li>
+        <a href="https://solarsystem.nasa.gov/planets/mars/overview/"><img src="https://solarsystem.nasa.gov/system/stellar_items/image_files/6_mars.jpg" alt="Picture of Mars."></a>
+        
+        <li><b>Jupiter</b></li>
+        <a href="https://solarsystem.nasa.gov/planets/jupiter/overview/"><img src="https://www.nasa.gov/sites/default/files/thumbnails/image/hs-2016-24-a-print-new.jpg" alt="Picture of Jupiter."></a>
+        
+        <li><b>Saturn</b></li>
+        <a href="https://solarsystem.nasa.gov/planets/saturn/overview/"><img src="https://solarsystem.nasa.gov/system/stellar_items/image_files/38_saturn_1600x900.jpg" alt="Picture of Saturn."></a>
+        
+        <li><b>Uranus</b></li>
+        <a href="https://solarsystem.nasa.gov/planets/uranus/overview/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Uranus_as_seen_by_NASA%27s_Voyager_2_%28remastered%29_-_JPEG_converted.jpg" alt="Picture of Uranus."></a>
+        
+        <li><b>Neptune</b></li>
+        <a href="https://solarsystem.nasa.gov/planets/neptune/overview/"><img src="https://www.nasa.gov/sites/default/files/thumbnails/image/pia01492-main.jpg" alt="Picture of Neptune."></a>
+      </ol>
+
+      <section>
+        <h3 id="h3">Planet Question?</h3>
+        <form class="form"> <!--this creates a form and allows users to input the answer to the question and then submit it by pressing the submit button-->
+            <fieldset>
+                <legend>What is the largest planet in our solar system?</legend>
+                <label><input type="text" id="question" name="planetquestion" placeholder="Click submit for the answer"></label>
+                <button  type="submit" onclick="rightAnswer(); return false;" value="Click-2-Alert">Submit</button> <!--return false prevents the page from refreshing.-->
+            </fieldset>
+        </form>
+      </section>
+
+      <script src="/index.js"></script>
+
+</body>
+</html>
